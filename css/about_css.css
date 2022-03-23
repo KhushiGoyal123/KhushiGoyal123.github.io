@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300&display=swap');
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main {
+    /* The image used */
+    background-image: url("../images/about_img.jpg");
+
+    /* Full height */
+    /* height: 100%; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .empty{
+    height: 55vh;
+}
+
+.container .about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-color: #FF8C6B;
+    opacity: 0.8;
+}
+
+.container .about-us .head{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.container .about-us .text{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 300px;
+    font-size: 24px;
+    color: white;
+}
+
+.container .our-solution{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 35vh;
+    opacity: 0.8;
+}
+
+.container .our-solution .head{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.container .our-solution .text{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 300px;
+    font-size: 24px;
+    color: #f36f4a;
+}
