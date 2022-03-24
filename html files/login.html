@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
     <title>Sign In & Sign Up Form</title>
 </head>
 
 <body>
-
     <main>
         <div class="box">
             <div class="inner-box">
@@ -26,18 +30,25 @@
                             <h6>Not registered yet?</h6>
                             <a href="#" class="toggle">Sign Up</a>
                         </div>
-                        <div class="actual-form">
-                            <div class="input-wrap">
-                                <input type="text" minlength="4" autocomplete="off" class="input-field" required>
-                                <label>Name</label>
+                        <div>
+                            <div class="actual-form contactForm">
+                                <div class="input-wrap">
+                                    <input type="text" minlength="4" autocomplete="off" class="input-field name" id="name"
+                                        name="name" required>
+                                    <label>Name</label>
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="password" minlength="4" autocomplete="off" class="input-field password"
+                                        id="password" name="password" required>
+                                    <label>Password</label>
+                                </div>
+                                <div id="contactForm">
+                                    <input type="submit" value="Sign In" class="sign-btn submit" id="submit" name="submit">
+                                </div>
+                                <p class="text">Forgot your password or login details? <a href="#">Get Help</a> signing
+                                    in
+                                </p>
                             </div>
-                            <div class="input-wrap">
-                                <input type="password" minlength="4" autocomplete="off" class="input-field" required>
-                                <label>Password</label>
-                            </div>
-                            <input type="submit" value="Sign In" class="sign-btn">
-                            <p class="text">Forgot your password or login details? <a href="#">Get Help</a> signing in
-                            </p>
                         </div>
                     </form>
                     <form action="index.html" autocomplete="off" class="sign-up-form">
@@ -52,18 +63,21 @@
                         </div>
                         <div class="actual-form">
                             <div class="input-wrap">
-                                <input type="text" minlength="4" autocomplete="off" class="input-field" required>
+                                <input type="text" minlength="4" autocomplete="off" class="input-field name" id="name"
+                                    required>
                                 <label>Name</label>
                             </div>
                             <div class="input-wrap">
-                                <input type="email" minlength="4" autocomplete="off" class="input-field" required>
+                                <input type="email" minlength="4" autocomplete="off" class="input-field email" id="email"
+                                    required>
                                 <label>Email</label>
                             </div>
                             <div class="input-wrap">
-                                <input type="password" minlength="4" autocomplete="off" class="input-field" required>
+                                <input type="password" minlength="4" autocomplete="off" class="input-field password"
+                                    id="password" required>
                                 <label>Password</label>
                             </div>
-                            <input type="submit" value="Sign Up" class="sign-btn">
+                            <input type="submit" value="Sign Up" class="sign-btn submit" id="submit">
                             <p class="text">By signing up I agree to the <a href="#">Terms of Services</a> and <a
                                     href="#">Privacy Policy</a></p>
                         </div>
@@ -94,7 +108,45 @@
         </div>
     </main>
 
-    <!-- javascript file  -->
+
+    <!-- <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBIag_ndexrbybOfR6_nYX-Q2Msti_MrFo",
+            authDomain: "sih-nex.firebaseapp.com",
+            databaseURL: "https://sih-nex-default-rtdb.firebaseio.com/",
+            projectId: "sih-nex",
+            storageBucket: "sih-nex.appspot.com",
+            messagingSenderId: "16645153885",
+            appId: "1:16645153885:web:3e3b9b0f90794c288019b4"
+        };
+
+        firebase.initializeApp(firebaseConfig); -->
+
+        <!-- // var messagesRef = firebase.database()
+       //     .ref('Collected Data');
+
+      /*  document.getElementById('contactForm')
+            .addEventListener('submit', submitForm);
+
+        function submitForm(e) {
+            e.preventDefault(); */
+
+            // Get values
+         /*   var name = getInputVal('name');
+            var password = getInputVal('password');
+
+            saveMessage(name, password);
+            document.getElementById('contactForm').reset();
+        }*/
+
+        // Function to get get form values
+        //function getInputVal(id) {
+       //     return document.getElementById(id).value;
+        //}
+
+         
+    </script> -->
+    <!-- <script src="../firebase/firebase.js"></script> -->
     <script src="../js/login.js"></script>
 </body>
 

@@ -3,6 +3,21 @@ const toggle_btn = document.querySelectorAll(".toggle");
 const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
+const name= document.querySelectorAll(".name");
+const email= document.querySelectorAll(".email");
+const password= document.querySelectorAll(".password");
+const submit = document.querySelectorAll(".submit");
+
+// submit.addEventListener("click", (e)=>{
+//     e.preventDefault();
+//     db.collection('contactForm').doc().set({
+//         name: name.value,
+//         email: email.value,
+//         password: password.value,
+//     }).then(()=> {
+//         contactForm.reset();
+//     })
+// })
 
 inputs.forEach(inp => {
     inp.addEventListener("focus", () => {
@@ -34,3 +49,5 @@ function moveSlider() {
 bullets.forEach(bullet => {
     bullet.addEventListener("click", moveSlider)
 })
+
+

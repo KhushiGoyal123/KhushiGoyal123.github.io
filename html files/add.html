@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/add_css.css">
+    <title>Add Event</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="">
+                <h3>NEX</h3>
+            </div>
+            <div class="nav-items">
+                <a href="/html files/index.html">
+                    <h4>Home</h4>
+                </a>
+                <a href="#upcoming">
+                    <h4>Upcoming Events</h4>
+                </a>
+                <a href="/html files/my_events.html">
+                    <h4>My Events</h4>
+                </a>
+                <a href="/html files/about.html">
+                    <h4>About Us</h4>
+                </a>
+                <a href="#contact">
+                    <h4>Contact Us</h4>
+                </a>
+                <a href="/html files/add.html">
+                    <h4>Add Event</h4>
+                </a>
+            </div>
+            <div class="sign">
+                <a href="/html files/login.html"><button>Log In</button></a>
+                <a href="/html files/sign_up.html" class="toggle"><button class="toggle">Sign Up</button></a>
+                <button class="orange">Be an Ambassador</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container-main">
+        <div class="heading">
+            <input type="text" class="fill-head" id="heading" placeholder="Add a Title for the Event">
+        </div>
+        <div class="banner-image">
+            <!-- <button class="banner">Add a Banner Image</button> -->
+            <form action="/action_page.php">
+                <label for="photo" class="label">Choose a photo for the banner!</label>
+
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </form>
+        </div>
+        <hr style="margin: 10px 0;">
+        <div class="description">
+            <div class="main-desc">
+                <label for="desc" style="font-size: 26px; font-weight: 600;">Description</label>
+                <textarea name="" id="desc" cols="80" rows="9" class="desc"
+                    placeholder="Add Description to your Event"></textarea>
+            </div>
+            <div class="short-desc">
+                <div class="cont">
+                    <a href="#">Registration Link</a>
+                    <br><br>
+                    <label for="">Date </label>
+                    <input type="text" class="small-input">
+                    <label for="">Place</label>
+                    <input type="text" class="small-input">
+                    <label for="">Time</label>
+                    <input type="text" class="small-input">
+                    <br><br>
+                    <hr>
+                    <input type="text" class="tags" placeholder="Add special Tags">
+                    <hr>
+                    <input type="text" class="tags" placeholder="Add more Tags">
+
+                    <a href="#" class="schedule">Add Schedule</a>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <form action="/action_page.php">
+                <label for="photo" class="label">Choose multiple photos for sample!</label>
+
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </form>
+        </div>
+        <div class="who-can">
+            <label class="topic-head" for="conditions">Who can participate (Add every condition in a new line)</label>
+            <br>
+            <textarea name="" id="conditions" cols="30" rows="10" class="condition"
+                placeholder="Start adding conditions for participation"></textarea>
+        </div>
+        <div class="prizes">
+            <label class="topic-head" for="prize-conditions">Prizes (Add each prize condition in a new line)</label>
+            <br>
+            <textarea name="" id="prize-conditions" cols="30" rows="10" class="prize-condition"
+                placeholder="Start adding conditions for prize distribution and certifications"></textarea>
+        </div>
+        <div class="who-can">
+            <label class="topic-head" for="conditions">Add more details for the Event</label>
+            <br>
+            <textarea name="" id="conditions" cols="30" rows="10" class="condition"
+                placeholder="Add more details (not necessary)"></textarea>
+        </div>
+        <div class="sponsors">
+            <form action="/action_page.php">
+                <label for="photo" class="label">Choose multiple photos for sponsers!</label>
+
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
