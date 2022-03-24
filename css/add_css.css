@@ -237,6 +237,27 @@ input[type = "file"]:hover{
     outline: none;
 }
 
+#extra-small-input{
+    border: 1px solid black;
+    margin: 4px 0;
+    width: 60%;
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#locate{
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #612fd3;
+    color: white;
+    cursor: pointer;
+}
+
 .tags{
     font-size: 16px;
     margin: 10px 0;

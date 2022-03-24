@@ -67,12 +67,13 @@
                 <div class="cont">
                     <a href="#">Registration Link</a>
                     <br><br>
-                    <label for="date">Date </label>
-                    <input type="text" class="small-input" id="date">
-                    <br>
-                    <label for="place">Place</label>
-                    <input type="text" class="small-input" id="place">
-                    <br>
+                    <label for="from">From </label>
+                    <input type="date" class="small-input" id="from"><br>
+                    <label for="to">To </label>
+                    <input type="date" class="small-input" id="to"><br>
+                    <label for="extra-small-input">Place</label>
+                    <input type="text" id="extra-small-input">
+                    <button id="locate">Locate</button><br>
                     <label for="time">Time</label>
                     <input type="text" class="small-input" id="time">
                     <br><br>
@@ -80,8 +81,6 @@
                     <input type="text" class="tags" placeholder="Add special Tags">
                     <hr>
                     <input type="text" class="tags" placeholder="Add more Tags">
-                    <br>
-                    <a href="/" class="schedule">Add Schedule</a>
                 </div>
             </div>
         </div>
@@ -121,6 +120,15 @@
             <a href="#" class="">Submit Event</a>
         </div>
     </div>
+    <script>
+        function display(){
+            let input = document.getElementById("extra-small-input");
+            input.value = "JECRC Foundation";
+        }
+        let locate = document.getElementById("locate");
+        console.log(locate);
+        locate.addEventListener("click", display)
+    </script>
 </body>
 
 </html>
