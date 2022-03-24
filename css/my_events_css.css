@@ -262,6 +262,25 @@ td {
     padding: 2px;
 }
 
-.event-color{
+.event-event{
     background-color: lightgreen;
+}
+
+.event-hack{
+    background-color: lightcoral;
+}
+
+.event-seminar{
+    background-color: lightskyblue;
+}
+
+#message{
+    height: 4rem;
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+    font-size: 18px;
+    padding-left: 10px;
+    align-items: center;
+    background-color: rgb(151, 151, 151);
 }

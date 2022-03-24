@@ -28,6 +28,7 @@ function jump() {
     showCalendar(currentMonth, currentYear);
 }
 
+
 function showCalendar(month, year) {
 
     let firstDay = (new Date(year, month)).getDay();
@@ -57,17 +58,29 @@ function showCalendar(month, year) {
             }
             
             else {
-                let cell = document.createElement("td");
-                let cellText = document.createTextNode(date);
-                if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-                    cell.classList.add("bg-info");
+                // if(date == 23){
+                //     let cell = document.createElement("button");
+                // }
+                
+                    let cell = document.createElement("td");
+                    let cellText = document.createTextNode(date);
+                    if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+                        // cell.classList.add("bg-info");
+                    }
+                    cell.appendChild(cellText);
+                    row.appendChild(cell);
+                    date++;
+                
+                if(date == 23 || date == 24 || date == 25){
+                    cell.classList.add("event-event");
                 }
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-                date++;
-                if(date == 23 || date == 24 || date == 25 || date == 12 || date == 13 || date == 14 || date == 3 || date == 4){
-                    cell.classList.add("event-color");
+                if(date == 12 || date == 13 || date == 14){
+                    cell.classList.add("event-hack");
                 }
+                if(date == 3 || date == 4){
+                    cell.classList.add("event-seminar");
+                }
+                
             }
 
         }
