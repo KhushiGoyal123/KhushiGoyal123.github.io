@@ -189,6 +189,7 @@ input[type = "file"]{
     border-radius: 10px;
     border: 1px solid black;
     background-color: #FF8C6B;
+    cursor: pointer;
 }
 
 .label{
@@ -228,6 +229,8 @@ input[type = "file"]:hover{
 .small-input{
     border: 1px solid black;
     margin: 4px 0;
+    width: 70%;
+    display: inline-block;
     margin-left: 6px;
     padding: 2px 10px;
     border-radius: 10px;
@@ -397,4 +400,26 @@ container-main .images-ex{
     height: 124px;
     margin-right: 21px;
     border: 1px solid black;
+}
+
+.submit{
+    display: flex;
+    height: 4rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit a{
+    text-decoration: none;
+    color: black;
+    background-color: #8371fd;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.submit a:hover{
+    color: white;
+    background-color: #612fd3;
 }
